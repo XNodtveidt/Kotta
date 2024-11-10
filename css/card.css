@@ -1,0 +1,137 @@
+
+.modal-body {
+    max-height: 70vh; /* Limita la altura del modal para forzar el scroll si el contenido es mayor */
+    overflow-y: auto;
+    background-image: linear-gradient(to bottom, #0171BB, #0099FE);
+}
+.modal-header{
+    background-image: linear-gradient(to bottom, #0171BB, #0099FE);
+}
+.modal-body  h1{
+    font-family: 'Inter';
+    font-weight: 700;
+    color: white;
+}
+
+  /* Aumenta la altura máxima del modal */
+  .custom-modal-height {
+      max-height: 200vh; /* Ajusta este valor para controlar la altura total del modal */
+  }
+
+  /* Ajusta el cuerpo desplazable del modal */
+  .modal-body {
+      max-height: 100vh; /* Limita la altura del modal para permitir desplazamiento */
+      overflow-y: auto;
+  }
+
+.modalcuerpo{
+    margin-left: 7rem !important;
+    margin-right: 7rem !important;
+}
+
+.modal-body h2{
+    font-family: 'Inter';
+    font-weight: 600;
+    color: white;
+}
+.modal-body h3{
+    font-family: 'Inter';
+    font-weight: 600;
+    color: white;
+}
+
+.modal-body p{
+    font-family: 'Inter';
+    font-weight: 200;
+    color: white;
+}
+
+ul li{
+    font-family: 'Inter';
+    font-weight: 200;
+    color: white;
+}
+
+.modal-body a{
+    font-family: 'Inter';
+    font-weight: 200;
+    color: white;
+}
+
+/* Button style */
+.buttonClose {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #0171BB;
+    background: white;
+    border-radius: 100%;
+    transition: background 0.5s;
+  }
+  
+  .X {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 0.5px;
+    background-color: #0171BB;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  
+  .Y {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 0.5px;
+    background-color: #0171BB;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  
+  .closeClose {
+    position: absolute;
+    display: flex;
+    padding: 0.8rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%);
+    top: -70%;
+    left: 50%;
+    width: 3em;
+    height: 1.7em;
+    font-size: 12px;
+    background-color: #0171BB;
+    color: rgb(187, 229, 236);
+    border: none;
+    border-radius: 3px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
+  .buttonClose:hover {
+    background-color: rgb(211, 21, 21);
+  }
+  
+  .buttonClose:active {
+    background-color: rgb(130, 0, 0);
+  }
+  
+  .buttonClose:hover > .close {
+    animation: close 0.2s forwards 0.25s;
+  }
+  
+  @keyframes close {
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .cerrar{
+    display: flex;
+    justify-content: end;
+    
+  }
+  
